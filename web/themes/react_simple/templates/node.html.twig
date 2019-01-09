@@ -105,11 +105,10 @@
 
     <div{{ content_attributes.addClass('node__content') }}>
         <div id="react-app">
-            React app will load here.
         </div>
-        <hr />
-        Node content appears here:
-        {{ content }}
+        <div id="react-content" class="invisible" data-title="{{ node.label }}">
+            {{ content }}
+        </div>
     </div>
 
 </article>
